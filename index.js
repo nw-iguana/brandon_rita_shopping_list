@@ -10,7 +10,7 @@ $(function() {
     })
 
     $('li').on('click', function(event) {
-        let itemText = $('span.shopping-item').toggleClass('shopping-item__checked');
+        let itemText = $(this).find('.shopping-item').toggleClass('shopping-item__checked');
     })
 
     $('li').on('click', function(event) {
