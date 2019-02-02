@@ -9,12 +9,12 @@ $(function() {
 
     })
 
-    $(document).on('click', '.shopping-item-toggle', function(event) {
-        let itemText = $(this).find('.shopping-item').toggleClass('shopping-item__checked');
+    $('li').on('click', function(event) {
+        let itemText = $('span.shopping-item').toggleClass('shopping-item__checked');
     })
 
     $('li').on('click', function(event) {
-        let itemDelete = $(this).remove('shopping-item');
+        $(this).remove('span.shopping-item');
     })
 
 
